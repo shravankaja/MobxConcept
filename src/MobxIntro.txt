@@ -1,0 +1,9 @@
+1) Anything that can be derived from the application state, should be Automatically.
+2) It is a state management library 
+3) Straitforward - write boiler plate free code 
+4) Effortless optimal rendering - There is dependency tree which captures relation between state 
+and output. this gaurantees computation depending on your state.
+5) Archtiectural free - can run on any ui framework 
+
+
+Action -> Obseravble state -> computed values -> side effects like render -> (on event) Action 
