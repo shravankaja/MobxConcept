@@ -8,21 +8,19 @@ class MakeAutoObservableStore {
     actionType = ""
 
     constructor() {
-        makeAutoObservable(this, {
-            count : observable,
-            inc : action  
-        }) // using makeautoobservable we need not specify actions and observabels and flows 
+        makeAutoObservable(this, {},{autoBind : true}) // using makeautoobservable we need not specify actions and observabels and flows 
         // but we can override by providing annotations
+        // we can use autBind as true to bind all the actions with 'this'
     }
 
-    inc() {
+    inc() { // this is the action which happens in response to a event like click or change
         console.log(this.count)
         this.count = this.count+1
         this.actionType = "+"
        
     }
 
-    dec() {
+    dec() { // 
         this.count = this.count-1 
         this.actionType = "-"
        
