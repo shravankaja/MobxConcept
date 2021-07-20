@@ -1,0 +1,54 @@
+
+We have few best practices to build our stores so as to maintain and build a large scale application. 
+
+What is store ? 
+The main responsibilty of the store is to move out logic and state from our components into standalone testable unit 
+that can be used in both front end and back end.
+
+We should be having two kind of stores - domain store and ui store. 
+
+Domain Store  - 
+ Appliation can have one or more domain stores. Like products, orders, todo etc. 
+ 
+ Domain store is like a tree structure where it manages our domain objects.
+  
+responsibilties of domain store -
+1) Instantiate domain objects, make sure the domain objects know the store they belong to
+2) Make sure there is onlu one instance of domain object 
+3) Provide integration with the backend 
+4) Update existing instances if updates are received
+5) Provide universal standalone testable component of our application
+6) make sure your store is testable and runs on the server side 
+7) there should be only one instance of the store 
+
+So the main goal of creating a domain store is to have a tree structure of its related domain objects which in turn are classes. It provides us abstracion and making our work
+simpler to test to run the logic of the domain by isolating and removing the tight coupling of front-end with our domian.
+By this way we can resuse the domain store with different ui as well.
+
+
+Domain Object - 
+
+like todo domain object will have methods like updateFromJson()  delete() and other related domain object methods
+
+Domain objects should be classes itself 
+
+Advantages - 
+1) They can have methods. By this we can just pass around objects instead of stores to the components. Reduces the amount of contextual awareness needed in our application 
+2) We can identify attricbutes and methos since they are encapsulated in a  object now
+3) Objects created using a constructor function can freely mix observable properties and methods, and non-observable properties and methods.
+4) They are easily recognizable and can be strictly type-checked.
+
+
+Architecture Example - 
+
+Let's take an example where we have a todo app-
+
+Our domain store would be ToDo Store - which takes care of removeToDo() , loadToDo() , removeToDo()
+
+Now we have a domain object called ToDo - which has methods which will be exposed to the components to whicht this object is goin to be passed
+like delete() which will call the removeToDo() in ToDoStore 
+
+
+We can also have a UIStore which would would take care of ui realted like language, session time etc in that store 
+
+We can also have other domain objects to our ToDoStore which deals with for example Users related to different ToDo's 
