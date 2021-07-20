@@ -29,3 +29,12 @@ class CounterMakeObservable {
 }
 
 export default CounterMakeObservable;
+
+// aviable annotation for makeObservabel are 
+// 1) observabel.deep which is observable which would work on inner content of map array object etc 
+// 2) observabel.shallow content inside would be untouched 
+// 3) observable.struct any value which is structurally equal will be ingnored 
+// 4) action.bound will bind to a instance so that this will always be set 
+// 5) computed can be used for getter 
+// 6) computed.struct expects it to be structrally equal to calue computed 
+// 7) 
