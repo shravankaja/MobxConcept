@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react'
 import '../CSS/main.css'
-import { useLocalObservable, Observer } from "mobx-react-lite"
+    import { useLocalObservable, Observer } from "mobx-react-lite"
 import { observable } from 'mobx'
 
 function LocalObservable() {
