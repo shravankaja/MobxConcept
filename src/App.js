@@ -38,6 +38,8 @@ import ArgumentComputedCom from '../src/Computed_With_Arguments/ArgumnetComputed
 // import ComputedFunction from '../src/Computed_With_Arguments/computedFn'
 // import CustomObservableStore from './CustomObservables/CustomObservableStore';
 // import  CustomObservableComp from '../src/CustomObservables/CustomObservableComp'
+import LazyObservabelComp from './LazyObservable/LazyObservableComp';
+import LazyObservable from '../src/LazyObservable/LazyObservableStore'
 
 function App() {
   // const store = new StoreOne()
@@ -62,7 +64,7 @@ function App() {
   // const model = new ViewModel()
   // const argumentComputed = new ArgumentComputed()
   // const customStore = new CustomObservableStore()
-  
+  // const lazyObservableStore = new LazyObservable()
  
 
   return (
@@ -90,7 +92,7 @@ function App() {
     <div>
       {/* <ComputedFunction /> */}
       {/* < CustomObservableComp store = {customStore} /> */}
-
+      {/* <LazyObservabelComp store = {lazyObservableStore} /> */}
     </div>
     
     );
