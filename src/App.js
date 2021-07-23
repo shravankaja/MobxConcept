@@ -33,6 +33,10 @@ import {createViewModel} from 'mobx-utils'
 import QueueProcessor from './Mobx_Utils/qeueProcessor';
 import Observablegroupmap  from './Mobx_Utils/ObservableGroupMap';
 import CreateTransformer from './Mobx_Utils/CreateTransformer/CreateTransformer';
+import ArgumentComputed from './Computed_With_Arguments/ArgumentsComputed';
+import ArgumentComputedCom from '../src/Computed_With_Arguments/ArgumnetComputedComp'
+import ComputedFunction from '../src/Computed_With_Arguments/computedFn'
+
 
 function App() {
   // const store = new StoreOne()
@@ -55,6 +59,8 @@ function App() {
   // }
   // const fromesourceObj = fromResourceStore.returnfromResource(obj)
   // const model = new ViewModel()
+  // const argumentComputed = new ArgumentComputed()
+  
   
  
 
@@ -77,8 +83,15 @@ function App() {
   // <QueueProcessor />
   // <ViewModelComponent   actualModel = {model}  />
   // <Observablegroupmap />
-    <CreateTransformer />
-  );
+    // <CreateTransformer />
+    
+    // <ArgumentComputedCom  store = {argumentComputed}/>
+    <div>
+      <ComputedFunction />
+
+    </div>
+    
+    );
 }
 
 export default App;
