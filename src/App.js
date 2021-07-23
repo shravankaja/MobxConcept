@@ -19,6 +19,20 @@ import LocalObservable from '../src/Components/LocalObservable'
 import StockStore from '../src/StoreMangement/StockStore'
 import Stock from '../src/StoreMangement/stock'
 import stock from '../src/StoreMangement/stock';
+import FromPromise from './Mobx_Utils/FromPromise';
+import FromPromiseComponent from './Mobx_Utils/FromPromiseComponent';
+import FromPromiseStore from './Mobx_Utils/FromPromiseStore';
+import React from 'react';
+import LazyObservableComponent from './Mobx_Utils/LazyObservables/LazyObservableComponent';
+import LazyObservableStore from '../src/Mobx_Utils/LazyObservables/LazyObservableStore.';
+import FromResourceComponent from './Mobx_Utils/FromResources/fromResourceComponent';
+import FromResourceStore from './Mobx_Utils/FromResources/fromResources';
+import ViewModelComponent from './Mobx_Utils/ViewModel/ViewModelComponent';
+import ViewModel from './Mobx_Utils/ViewModel/viewModelStore';
+import {createViewModel} from 'mobx-utils'
+import QueueProcessor from './Mobx_Utils/qeueProcessor';
+import Observablegroupmap  from './Mobx_Utils/ObservableGroupMap';
+import CreateTransformer from './Mobx_Utils/CreateTransformer/CreateTransformer';
 
 function App() {
   // const store = new StoreOne()
@@ -28,7 +42,22 @@ function App() {
   // const compStore = new ComputedStore()
   // const reactionStore = new ReactionStore()
   // const whenStore = new WhenReactionStore()
-  const stockstore = new StockStore()
+  // const stockstore = new StockStore()
+  // const fromPromiseStore = new FromPromiseStore()
+  // const assests = fromPromiseStore.getAssests()
+  // React.useEffect(()=> {
+  // })
+  // const lazyObservable = new LazyObservableStore()
+  // const lazyObservableObject = lazyObservable.fetchData()
+  // const fromResourceStore = new FromResourceStore()
+  // let obj = {
+  //   name : "Shravam"
+  // }
+  // const fromesourceObj = fromResourceStore.returnfromResource(obj)
+  // const model = new ViewModel()
+  
+ 
+
   return (
     //  <Mobx store = {store} />
     // <CountMakeObservable  store = {makeObservableStore} />
@@ -38,7 +67,17 @@ function App() {
     // <Reaction store = {reactionStore} />
     // <WhenReaction  store = {whenStore} />
     // <LocalObservable />
-    <Stock store = {stockstore} />
+    // <Stock store = {stockstore} />
+  //  <div> <FromPromise />
+  //   <FromPromiseComponent  assests = {assests}/>
+  //   </div>
+  // <LazyObservableComponent lazyObservable = {lazyObservableObject}  />
+  // <FromResourceComponent  fromResource = {fromesourceObj} />
+  // <div></div>
+  // <QueueProcessor />
+  // <ViewModelComponent   actualModel = {model}  />
+  // <Observablegroupmap />
+    <CreateTransformer />
   );
 }
 
