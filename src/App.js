@@ -35,8 +35,9 @@ import Observablegroupmap  from './Mobx_Utils/ObservableGroupMap';
 import CreateTransformer from './Mobx_Utils/CreateTransformer/CreateTransformer';
 import ArgumentComputed from './Computed_With_Arguments/ArgumentsComputed';
 import ArgumentComputedCom from '../src/Computed_With_Arguments/ArgumnetComputedComp'
-import ComputedFunction from '../src/Computed_With_Arguments/computedFn'
-
+// import ComputedFunction from '../src/Computed_With_Arguments/computedFn'
+// import CustomObservableStore from './CustomObservables/CustomObservableStore';
+// import  CustomObservableComp from '../src/CustomObservables/CustomObservableComp'
 
 function App() {
   // const store = new StoreOne()
@@ -60,7 +61,7 @@ function App() {
   // const fromesourceObj = fromResourceStore.returnfromResource(obj)
   // const model = new ViewModel()
   // const argumentComputed = new ArgumentComputed()
-  
+  // const customStore = new CustomObservableStore()
   
  
 
@@ -87,7 +88,8 @@ function App() {
     
     // <ArgumentComputedCom  store = {argumentComputed}/>
     <div>
-      <ComputedFunction />
+      {/* <ComputedFunction /> */}
+      {/* < CustomObservableComp store = {customStore} /> */}
 
     </div>
     
