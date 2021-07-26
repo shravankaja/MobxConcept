@@ -40,6 +40,7 @@ import ArgumentComputedCom from '../src/Computed_With_Arguments/ArgumnetComputed
 // import  CustomObservableComp from '../src/CustomObservables/CustomObservableComp'
 import LazyObservabelComp from './LazyObservable/LazyObservableComp';
 import LazyObservable from '../src/LazyObservable/LazyObservableStore'
+import CollectionUtilites from '../src/Components/CollectionUtilities'
 
 function App() {
   // const store = new StoreOne()
@@ -93,6 +94,7 @@ function App() {
       {/* <ComputedFunction /> */}
       {/* < CustomObservableComp store = {customStore} /> */}
       {/* <LazyObservabelComp store = {lazyObservableStore} /> */}
+      <CollectionUtilites />
     </div>
     
     );
